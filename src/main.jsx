@@ -181,7 +181,9 @@ function App() {
   const [selectedOffer, setSelectedOffer] = React.useState(() => buildOffer(rooms[0], rooms[0].defaults));
 
   React.useEffect(() => {
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    const isLocalHost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+    if (isLocalHost && (window.location.pathname === '/' || window.location.pathname === '/index.html')) {
       window.history.replaceState({}, '', listPath);
     }
   }, []);
