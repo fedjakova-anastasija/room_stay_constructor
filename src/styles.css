@@ -173,22 +173,14 @@ input {
 .room-meta-icon,
 .option-icon,
 .checkout-collapse-icon {
-  background: currentColor;
   display: inline-block;
-  mask-image: var(--icon-url);
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: var(--icon-url);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+  object-fit: contain;
+  object-position: center;
 }
 
 .summary-icon {
   width: 18px;
   height: 18px;
-  color: #2d6bcc;
   flex: 0 0 auto;
 }
 
@@ -235,6 +227,7 @@ input {
 .back-button-icon {
   width: 18px;
   height: 18px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1366%) hue-rotate(199deg) brightness(93%) contrast(94%);
 }
 
 .filters-block {
@@ -279,6 +272,7 @@ input {
 .filter-chip-clear-icon {
   width: 14px;
   height: 14px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1366%) hue-rotate(199deg) brightness(93%) contrast(94%);
 }
 
 .filter-chip-arrow {
@@ -407,7 +401,7 @@ input {
 .room-feature-svg {
   width: 16px;
   height: 16px;
-  color: #7d858f;
+  filter: grayscale(1) brightness(0.6);
 }
 
 .room-photo-count {
@@ -428,6 +422,7 @@ input {
 .room-photo-count-icon {
   width: 13px;
   height: 13px;
+  filter: brightness(0) invert(1);
 }
 
 .room-card-body {
@@ -466,6 +461,7 @@ input {
 .room-toggle-icon {
   width: 14px;
   height: 14px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1366%) hue-rotate(199deg) brightness(93%) contrast(94%);
 }
 
 .room-meta-grid {
@@ -486,7 +482,7 @@ input {
 .room-meta-icon {
   width: 14px;
   height: 14px;
-  color: #8c96a3;
+  filter: grayscale(1) brightness(0.7);
 }
 
 .builder-block {
@@ -584,12 +580,12 @@ input {
 .option-icon {
   width: 16px;
   height: 16px;
-  color: #919aa6;
   flex: 0 0 auto;
+  filter: grayscale(1) brightness(0.65);
 }
 
 .option-icon-benefit {
-  color: #cf6800;
+  filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(1299%) hue-rotate(11deg) brightness(98%) contrast(102%);
 }
 
 .option-radio {
@@ -901,6 +897,7 @@ input {
 .checkout-collapse-icon {
   width: 16px;
   height: 16px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1366%) hue-rotate(199deg) brightness(93%) contrast(94%);
 }
 
 @media (max-width: 374px) {

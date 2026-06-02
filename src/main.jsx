@@ -654,16 +654,7 @@ function SummaryLine({ label, value }) {
 }
 
 function SvgMaskIcon({ className, icon }) {
-  return (
-    <span
-      aria-hidden="true"
-      className={className}
-      style={{
-        maskImage: `url(${icon})`,
-        WebkitMaskImage: `url(${icon})`,
-      }}
-    />
-  );
+  return <img alt="" aria-hidden="true" className={className} src={icon} />;
 }
 
 function FilterChip({ active, filter, onClear, onClick, open, value }) {
